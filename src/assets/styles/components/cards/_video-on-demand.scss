@@ -1,0 +1,10 @@
+.video-on-demand {
+    height: 435px;
+    max-height: 485px;
+
+    &__film-box {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

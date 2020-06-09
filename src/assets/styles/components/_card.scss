@@ -9,29 +9,6 @@
         max-width: 740px;
     }
 
-    &--create-own-package {
-        background-color: $color-purple;
-    }
-
-    &--application {
-        background-color: #ffffff;
-        position: relative;
-    }
-
-    &--package {
-        background-color: #2e221d;
-    }
-
-    &--support {
-        background-image: url('/../../assets/img/support-bg.svg');
-        background-size: cover;
-    }
-
-    &--video-on-demand {
-        height: 435px;
-        max-height: 485px;
-    }
-
     &--no-padding {
         padding: 0;
         max-width: 400px;
@@ -41,7 +18,7 @@
         position: relative;
         z-index: 4;
         
-        &--tv-online {
+        &--now-in-tv {
             background-color: $color-green;
             padding: 25px 30px 15px;
             display: flex;
@@ -49,82 +26,6 @@
 
             .header-1 {
                 line-height: 35px;
-            }
-        }
-    }
-
-    &__film {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        overflow-x: hidden;
-        height: 82%;
-    }
-
-    &__film-slider {
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        img {
-            width: 105%;
-        }
-    }
-
-    &__film-slider-controlers {
-        position: absolute;
-        top: 35%;
-        z-index: 2;
-        width: calc(100% - 60px);
-        display: flex;
-        justify-content: space-between;
-
-        button {
-            border: none;
-            background-color: transparent;
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-
-    &__video-on-demand-slider {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    &__video-on-demand-slider-controlers {
-        position: absolute;
-        top: 50%;
-        z-index: 2;
-        width: calc(100% - 60px);
-        display: flex;
-        justify-content: space-between;
-
-        button {
-            border: none;
-            background-color: transparent;
-
-            &:hover {
-                cursor: pointer
-            }
-
-            &:focus {
-                outline: none;
             }
         }
     }
@@ -147,35 +48,6 @@
         border-top: 8px solid $color-green;
     }
 
-
-    &__counter {
-        color: white;
-        display: flex;
-        flex-direction: column;
-        width: 140px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__counter-label {
-        text-transform: uppercase;
-        font-size: 11px;
-        text-align: center;
-    }
-
-    &__counter-number {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    &__list {
-        padding: 0 17px;
-        margin-top: 15px;
-        font-size: 16px;
-    }
-
     &__text {
         font-size: 16px;
         color: #ffffff;
@@ -183,184 +55,5 @@
         &--grey {
             color:#5a5a5a;
         }
-    }
-
-    &__list-item {
-        color: #ffffff;
-    }
-
-    &__content {
-        &--internet-offer {
-            margin-top: 20px;
-        }
-
-        &--application {
-            margin-top: 15px;
-            position: relative;
-            z-index: 2;
-        }
-    }
-
-    &__promotion-text {
-        font-weight: bold;
-        font-size: 18px;
-        text-transform: uppercase;
-        margin-top: 10px;
-        margin-right: 10px;
-        text-align: right;
-    }
-
-    &__promotion-price {
-        font-size: 55px;
-        font-weight: bold;
-    }
-
-    &__promotion-currency {
-        font-size: 25px;
-        font-weight: bold;
-    }
-
-    &__promotion {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    &__actions {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    &__btn {
-        color: #ffffff;
-        text-transform: uppercase;
-        font-weight: bold;
-        border: 1px solid #ffffff;
-        background-color: transparent;
-        font-size: 20px;
-        width: 100%;
-        max-width: 460px;
-        height: 46px;
-        margin-bottom: 5px;
-        transition: .2s;
-
-        &:hover {
-            cursor: pointer;
-            background-color: #4d3c6b;
-        }
-    }
-
-    &__actions-text {
-        font-size: 20px;
-        color: #ffffff;
-    }
-
-    &__application-bg {
-        position: absolute;
-        bottom: -4px;
-        right: 0px;
-    }
-
-    &__application-platforms {
-        position: absolute;
-        bottom: 30px;
-    }
-
-    &__application-platforms-link {
-        margin-right: 20px;
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-    }
-
-    &__bg-image {
-        position: absolute;
-        max-height: 485px;
-        left: 0;
-        top: 0;
-    }
-
-    &__support-promo-text {
-        font-size: 14px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-
-        & > div {
-            max-width: 256px;
-        }
-    }
-
-    &__get-more-promotion {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 4;
-        background-image: linear-gradient(to top, rgba(20, 20, 20, 0.8) 75%, rgba(20, 20, 20, 0));
-        width: 100%;
-        padding-left: 30px;
-    }
-
-    &__promotion-line {
-        text-transform: uppercase;
-        color: #ffffff;
-        font-size: 50px;
-    }
-
-    &__promotion-line-small-text {
-        font-size: 30px;
-    }
-
-    &__promotion-line-price {
-        font-size: 100px;
-        font-weight: bold;
-        color: $color-pink;
-        line-height: 83px;
-    }
-
-    &__promotion-line-currency {
-        font-size: 30px;
-        margin-left: -35px;
-    }
-
-    &__promotion-line-flex {
-        display: flex;
-        line-height: 40px;
-        margin-top: 5px;
-    }
-
-    &__promotion-icon {
-        width: 52px;
-        height: 52px;
-        border: 1px solid rgba(256, 256, 256, 0.2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 40px;
-    }
-
-    &__promotion-icons {
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        width: 130px;
-        justify-content: space-between;
-        font-size: 18px;
-        margin-bottom: 25px;
-    }
-
-    &__get-more-bg-clip {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 2;
-    }
-
-    &__get-more-bg-img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
     }
 }

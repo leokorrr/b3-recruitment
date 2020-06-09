@@ -1,0 +1,30 @@
+.application {
+    background-color: #ffffff;
+    position: relative;
+
+    &__content {
+        margin-top: 15px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: -4px;
+        right: 0px;
+    }
+
+    &__platforms {
+        position: absolute;
+        bottom: 30px;
+
+    }
+
+    &__platforms-link {
+        margin-right: 20px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

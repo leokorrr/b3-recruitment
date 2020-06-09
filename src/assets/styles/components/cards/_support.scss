@@ -1,0 +1,16 @@
+.support {
+    background-image: url('/../../assets/img/support-bg.svg');
+    background-size: cover;
+
+    &__promo-text {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        & > div {
+            max-width: 256px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.package {
+    background-color: #2e221d;
+
+    &__content {
+        margin-top: 20px;
+    }
+
+    &__list {
+        padding: 0 17px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    &__list-item {
+        color: #ffffff;
+    }
+
+    &__promotion {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__promotion-text {
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    &__promotion-price {
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    &__promotion-currency {
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
