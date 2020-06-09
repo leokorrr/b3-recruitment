@@ -18,9 +18,21 @@ export class VideoOnDemandComponent implements OnInit {
     loop: false
   };
 
-  constructor() { }
+
+  constructor(private ngxSiemaService: NgxSiemaService) { }
 
   ngOnInit(): void {
   }
+
+  prev() {
+    this.ngxSiemaService.prev(1, '.siema')
+      .subscribe((data: any) => console.log(data));
+  }
+ 
+  next() {
+    this.ngxSiemaService.next(1, '.siema')
+      .subscribe((data: any) => console.log(data));
+  }
+
 
 }
