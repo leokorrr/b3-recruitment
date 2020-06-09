@@ -1,3 +1,96 @@
 .now-in-tv {
-    
+    &__film {
+        height: calc(100% - 126px);
+        position: relative;
+    }
+
+    &__film-slider {
+        height: 100%;
+    }
+
+    &__bg {
+        height: 100%;
+        
+        img {
+            height: 100%;
+        }
+    }
+
+    &__slide {
+        height: 100%;
+    }
+
+    .film-slider {
+        height: 100%;
+
+        & > div {
+            height: 100%;
+
+            & > div {
+                height: 100%;
+            }
+        }
+    }
+
+    &__slider-controllers-box {
+        position: absolute;
+        top: 126px;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: calc(100% - 126px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            .now-in-tv__play-btn {
+                display: flex;
+            }
+        }
+    }
+
+    &__slider-controllers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    &__slider-controller {
+        background-color: transparent;
+        position: relative;
+        border: none;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+        &:focus {
+            outline: none;
+        }
+
+        &:last-of-type {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__play-btn {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid #ffffff;
+        border-radius: 40px;
+        display: none;
+        cursor: pointer;
+
+        img {
+            margin-left: 5px;
+        }
+    }
 }

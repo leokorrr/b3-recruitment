@@ -11,28 +11,58 @@
         <div class="card__header-arrow-down"></div>
     </div>
 </div>
-<div class="card__film">
-    <!-- <ngx-siema [options]="options2" class="card__film-slider">
-        <ngx-siema-slide>
-            <img src="../../assets/img/film-tumbnail.svg" alt="">
-        </ngx-siema-slide>
-        <ngx-siema-slide>
-          <img src="../../assets/img/film-thumbnail-2.jpg">
-        </ngx-siema-slide>
-        <ngx-siema-slide>
-          <img src="../../assets/img/film-tumbnail.svg">
-        </ngx-siema-slide>
-    </ngx-siema>
-    <div class="card__film-slider-controlers">
-        <button type="button" (click)="prev2()"><img src="../../assets/img/arrow-left.svg" alt="arrow left"></button>
-        
-        <button type="button" (click)="next2()"><img src="../../assets/img/arrow-right.svg" alt="arrow right"></button>
-    </div> -->
-    <div class="film-info">
-        <div>
-            <h3 class="header-2">Anatomia magii</h3>
-            <div class="film-info__channel green">Discovery channel</div>
+<ngx-siema [options]="filmSliderOptions" class="now-in-tv__film-slider">
+    <ngx-siema-slide class="now-in-tv__slide">
+        <div class="now-in-tv__film">
+            <div class="now-in-tv__bg">
+                <img src="../../assets/img/film-tumbnail.svg">
+            </div>
+            <div class="film-info">
+                <div>
+                    <h3 class="header-2">Anatomia magii</h3>
+                    <div class="film-info__channel green">Discovery channel</div>
+                </div>
+                <div class="film-info__border"></div>
+            </div>
         </div>
-        <div class="film-info__border"></div>
+    </ngx-siema-slide>
+    <ngx-siema-slide class="now-in-tv__slide">
+        <div class="now-in-tv__film">
+            <div class="now-in-tv__bg">
+                <img src="../../assets/img/film-thumbnail-2.jpg">
+            </div>
+            <div class="film-info">
+                <div>
+                    <h3 class="header-2">Anatomia rowerów</h3>
+                    <div class="film-info__channel green">Cycling TV</div>
+                </div>
+                <div class="film-info__border"></div>
+            </div>
+            </div>
+    </ngx-siema-slide>
+    <ngx-siema-slide class="now-in-tv__slide"> 
+        <div class="now-in-tv__film">
+            <div class="now-in-tv__bg">
+                <img src="../../assets/img/film-tumbnail.svg">
+            </div>
+            <div class="film-info">
+                <div>
+                    <h3 class="header-2">Anatomia magii</h3>
+                    <div class="film-info__channel green">Discovery channel</div>
+                </div>
+                <div class="film-info__border"></div>
+            </div>
+        </div>
+    </ngx-siema-slide>
+</ngx-siema>
+<div class="now-in-tv__slider-controllers-box">
+    <div class="now-in-tv__slider-controllers">
+        <button type="button" class="now-in-tv__slider-controller" (click)="prev2()"><img src="../../assets/img/arrow-left.svg" alt="arrow left"></button>
+        <div class="now-in-tv__play-btn">
+            <img src="../../../assets/img/play-icon.svg" alt="">
+        </div>
+        <button type="button" class="now-in-tv__slider-controller" (click)="next2()"><img src="../../assets/img/arrow-left.svg" alt="arrow right"></button>        
     </div>
 </div>
+    
+

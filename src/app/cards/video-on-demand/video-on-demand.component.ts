@@ -7,15 +7,15 @@ import { NgxSiemaService } from 'ngx-siema';
   templateUrl: './video-on-demand.component.html'
 })
 export class VideoOnDemandComponent implements OnInit {
-  options: NgxSiemaOptions = {
-    selector: '.siema',
+  videoSliderOptions: NgxSiemaOptions = {
+    selector: '.video-slider',
     duration: 200,
     easing: 'ease-out',
     perPage: 1,
     startIndex: 0,
     draggable: true,
     threshold: 20,
-    loop: false
+    loop: true
   };
 
 
@@ -25,12 +25,12 @@ export class VideoOnDemandComponent implements OnInit {
   }
 
   prev() {
-    this.ngxSiemaService.prev(1, '.siema')
+    this.ngxSiemaService.prev(1, '.video-slider')
       .subscribe((data: any) => console.log(data));
   }
  
   next() {
-    this.ngxSiemaService.next(1, '.siema')
+    this.ngxSiemaService.next(1, '.video-slider')
       .subscribe((data: any) => console.log(data));
   }
 
