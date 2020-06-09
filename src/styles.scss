@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/global/variables';
+@import './assets/styles/global/elements';
+@import './assets/styles/global/global';
+@import './assets/styles/components/card';
+@import './assets/styles/components/choose-package';
+@import './assets/styles/components/package-item';
+@import './assets/styles/components/video-info';
+@import './assets/styles/components/film-info-viewers';
+@import './assets/styles/components/film-info';
+@import './assets/styles/components/expert';
+@import './assets/styles/components/footer';
+@import './assets/styles/components/menu-opened';
+@import './assets/styles/components/menu';

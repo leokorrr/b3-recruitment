@@ -1,0 +1,88 @@
+<div class="menu">
+    <div class="wrapper menu__box">
+        <div class="menu__trigger" (click)="showMenu = !showMenu">
+            <img src="../../assets/img/hamburger-menu.png" alt="" class="menu__trigger-icon">
+        </div>
+        <div class="menu__info">
+            <div class="menu__element">centrum obsługi klienta <img src="../../assets/img/phone-icon.png" alt=""><span class="green bold">800 080 800</span></div>
+            <div class="menu__element"><a href="#" class="menu__element-link"><img src="../../assets/img/search-icon.png" alt=""> szukaj</a></div>
+            <div class="menu__element"><a href="#" class="menu__element-link"><img src="../../assets/img/person.png" alt=""> strefa abonanta</a></div>
+        </div>
+    </div>
+    <div class="menu-opened" *ngIf="showMenu">
+        <div class="menu-opened__section menu-opened__section--bg-dark">
+            <h2 class="menu-opened__header purple">
+                Paczki i pakiety
+            </h2>
+            <ul class="menu-opened__packages-list">
+                <li class="menu-opened__packages-list-item">
+                    <a href="#" class="menu-opened__package-link">
+                        <div class="menu-opened__package-icon-box">
+                            <img src="../../assets/img/tv-icon.svg" class="menu-opened__package-icon menu-opened__package-icon--tv" alt="tv icon">
+                        </div>
+                        telewizja
+                    </a>
+                </li>
+                <li class="menu-opened__packages-list-item">
+                    <a href="#" class="menu-opened__package-link">
+                        <div class="menu-opened__package-icon-box">
+                            <img src="../../assets/img/mouse-icon.svg" class="menu-opened__package-icon menu-opened__package-icon--mouse" alt="mouse icon">
+                        </div>
+                        internet
+                    </a>
+                </li>
+                <li class="menu-opened__packages-list-item">
+                    <a href="#" class="menu-opened__package-link">
+                        <div class="menu-opened__package-icon-box">
+                            <img src="../../assets/img/phone-icon-purple.svg" class="menu-opened__package-icon menu-opened__package-icon--phone" alt="phone icon">
+                        </div>
+                        telefon
+                    </a>
+                </li>
+                <li class="menu-opened__packages-list-item">
+                    <a href="#" class="menu-opened__package-link">
+                        <div class="menu-opened__package-icon-box">
+                            <img src="../../assets/img/mobile-internet-icon.svg" class="menu-opened__package-icon menu-opened__package-icon--mobile-internet" alt="mobile internet icon">
+                        </div>
+                        internet mobilny
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-opened__section menu-opened__section--bg-white">
+            <h2 class="menu-opened__header green">
+                VOD
+            </h2>
+            <p class="menu-opened___text menu-opened__text--grey">
+                Oglądaj telewizję, gdy masz czas i ochotę
+            </p>
+            <div class="menu-opened__promotion-today">
+                <div class="menu-opened__promotion-today-img">
+                    <img src="../../assets/img/promotion-film.jpg" alt="promotion film">
+                </div>
+                <div class="menu-opened__promotion-today-info">
+                    <div class="menu-opened__promotion-today-label green">
+                        Dzis w promocji
+                    </div>
+                    <div class="menu-opened__promotion-today-title">
+                        Ocalony
+                    </div>
+                    <div class="menu-opened__promotion-today-film-type">
+                        dramat
+                    </div>
+                    <div class="menu-opened__promotion-today-action blue">
+                        5,00 zł <img src="../../assets/img/arrow-right-long.svg" alt=""> <a href="#" class="blue menu-opened__promotion-link"><span class="menu-opened__promotion-today-buy">kup</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-opened__section menu-opened__section--bg-dark">
+            <h2 class="menu-opened__header green">
+                TV online
+            </h2>
+            <p class="menu-opened___text menu-opened__text--light-grey">
+                Oglądaj telewizję przez internet na czym chcesz:komputer, tablet, telefon
+            </p>
+        </div>
+    </div>
+</div>

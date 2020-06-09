@@ -1,0 +1,67 @@
+.menu {
+    background-color: $color-gray-dark;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__element {
+        color: $color-gray;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-right: 45px;
+
+        img {
+            margin-right: 10px;
+        }
+
+
+        &:first-of-type {
+
+            img {
+                margin-left: 15px;
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__element-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-gray;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__info {
+        display: flex;
+        padding-top: 20px;
+        height: fit-content;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__trigger {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+        
+        &:hover {
+            cursor: pointer;
+            background-color: #3c3c3c;
+        }
+    }
+    
+}

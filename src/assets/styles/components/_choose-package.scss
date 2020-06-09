@@ -1,0 +1,12 @@
+.choose-package {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+    &__plus {
+        display: flex;
+        align-items: center;
+        margin-top: -50px;
+    }
+}

@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding-bottom: 30px;
+
+    &__row {
+        display: flex;
+    }
+}

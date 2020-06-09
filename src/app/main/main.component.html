@@ -1,0 +1,272 @@
+<main>
+    <div class="main">
+        <div class="wrapper">
+            <div class="main__row">
+                <div class="card card--wide">
+                    <div class="card__header">
+                        <h2 class="header-1">Zyskaj więcej</h2>
+                    </div>
+                    <div class="card__get-more-bg">
+                        <img src="../../assets/img/get-more-bg-clip.svg" class="card__get-more-bg-clip" alt="">
+                        <img src="../../assets/img/get-more-bg.svg" alt="" class="card__get-more-bg-img">
+                    </div>
+                    <div class="card__get-more-promotion">
+                        <div class="card__promotion-icons">
+                            <div class="card__promotion-icon">
+                                <img src="../../assets/img/mouse-icon-white.svg" alt="mouse icon">
+                            </div>
+                            +
+                            <div class="card__promotion-icon">
+                                <img src="../../assets/img/present-icon.svg" alt="present icon">
+                            </div>
+                        </div>
+                        <div class="card__promotion-line">
+                            <span class="bold">kup internet,</span><br>
+                            <div class="card__promotion-line-flex">
+                                <div>
+                                    <span> a <span class="purple"><span class="bold">HBO</span>GO</span></span><br>
+                                    <span class="card__promotion-line-small-text">  dostaniesz za </span>
+                                </div>
+                                <div>
+                                    <span class="card__promotion-line-price">1 
+                                    <span class="card__promotion-line-currency">zł</span></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--video-on-demand">
+                    <div class="card__header">
+                        <h2 class="header-1">VOD</h2>
+                        <h3 class="subheader subheader--white bold">Video na żądanie</h3>
+                    </div>
+                    <ngx-siema [options]="options" class="card__video-on-demand-slider">
+                        <ngx-siema-slide>
+                          <img src="../../assets/img/captain-america.svg">
+                        </ngx-siema-slide>
+                        <ngx-siema-slide>
+                          <img src="../../assets/img/captain-america-2.jpg">
+                        </ngx-siema-slide>
+                        <ngx-siema-slide>
+                          <img src="../../assets/img/captain-america-3.jpg">
+                        </ngx-siema-slide>
+                    </ngx-siema>
+                    <div class="card__video-on-demand-slider-controlers">
+                        <button type="button" (click)="prev()"><img src="../../assets/img/arrow-left.svg" alt="arrow left"></button>
+                        <button type="button" (click)="next()"><img src="../../assets/img/arrow-right.svg" alt="arrow right"></button>
+                    </div>
+                    <div class="video-info">
+                        <div class="">
+                            <h4 class="header-2">Kapitan Ameryka: Zimowy żołnierz</h4>
+                            <div class="video-info__additional-info">
+                                <div class="video-info__new-label green">Nowości - akcja</div>
+                                <div class="video-info__price blue">14,00 zł</div>
+                            </div>
+                        </div>
+                        <div class="video-info__viewers">
+                            <div class="video-info__viewers-label">film <br> obejrzy</div>
+                            <div class="video-info__viewers-counter">125</div>
+                            <div class="video-info__viewers-icon"><img src="../../assets/img/viewers-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__row">
+                <div class="card card--wide card--create-own-package">
+                    <div class="card__header">
+                        <h2 class="header-1">Stwórz swój własny pakiet</h2>
+                        <h3 class="subheader subheader--white bold">Teliwizja - Internet - Telefon</h3>
+                    </div>
+                    <div class="choose-package">
+                        <div class="choose-package__package-item package-item">
+                            <div class="package-item__icon">
+                                <div class="package-item__icon-bg">
+                                    <img src="../../assets/img/tv-icon.svg" alt="tv icon">
+                                </div>
+                            </div>
+                            <div class="package-item__text">
+                                <div>
+                                    wybierz <span class="bold">ulubione kanały tv</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-package__plus"><img src="../../assets/img/plus-icon.svg" alt=""></div>
+                        <div class="choose-package__package-item package-item">
+                            <div class="package-item__icon">
+                                <div class="package-item__icon-bg">
+                                    <img src="../../assets/img/mouse-icon.svg" alt="mouse icon">
+                                </div>
+                            </div>
+                            <div class="package-item__text">
+                                <div>
+                                    wybierz <span class="bold">prędkość internetu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-package__plus"><img src="../../assets/img/plus-icon.svg" alt=""></div>
+                        <div class="choose-package__package-item package-item">
+                            <div class="package-item__icon">
+                                <div class="package-item__icon-bg">
+                                    <img src="../../assets/img/phone-icon-purple.svg" alt="phone icon">
+                                </div>
+                            </div>
+                            <div class="package-item__text">
+                                <div>
+                                    wybierz <span class="bold">ilość minut na rozmowy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="choose-package__plus"><img src="../../assets/img/plus-icon.svg" alt=""></div>
+                        <div class="choose-package__package-item package-item">
+                            <div class="package-item__icon">
+                                <div class="package-item__icon-bg">
+                                    <img src="../../assets/img/mobile-internet-icon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="package-item__text">
+                                <div>
+                                    wybierz <span class="bold">internet mobilny</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__actions">
+                        <button class="card__btn">Stwórz pakiet</button>
+                        <div class="card__actions-text">lub wybierz pakiet, przygotowany przez nas</div>
+                    </div>
+                </div>
+                <div class="card card--no-padding">
+                    <div class="card__header card__header--tv-online">
+                        <div>
+                            <h2 class="header-1">Teraz <br> w TV online</h2>
+                        </div>
+                        <div class="film-info-viewers">
+                            <div class="film-info-viewers__label">teraz <br> ogląda</div>
+                            <div class="film-info-viewers__counter">258</div>
+                            <div class="film-info-viewers__icon"><img src="../../assets/img/viewers-icon.svg" alt=""></div>
+                        </div>
+                        <div class="card__header-arrow-box">
+                            <div class="card__header-arrow-down"></div>
+                        </div>
+                    </div>
+                    <div class="card__film">
+                        <ngx-siema [options]="options2" class="card__film-slider">
+                            <ngx-siema-slide>
+                                <img src="../../assets/img/film-tumbnail.svg" alt="">
+                            </ngx-siema-slide>
+                            <ngx-siema-slide>
+                              <img src="../../assets/img/film-thumbnail-2.jpg">
+                            </ngx-siema-slide>
+                            <ngx-siema-slide>
+                              <img src="../../assets/img/film-tumbnail.svg">
+                            </ngx-siema-slide>
+                        </ngx-siema>
+                        <div class="card__film-slider-controlers">
+                            <button type="button" (click)="prev2()"><img src="../../assets/img/arrow-left.svg" alt="arrow left"></button>
+                            
+                            <button type="button" (click)="next2()"><img src="../../assets/img/arrow-right.svg" alt="arrow right"></button>
+                        </div>
+                        <div class="film-info">
+                            <div>
+                                <h3 class="header-2">Anatomia magii</h3>
+                                <div class="film-info__channel green">Discovery channel</div>
+                            </div>
+                            <div class="film-info__border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__row">
+                <div class="card card--package">
+                    <div class="card__header">
+                        <h2 class="header-1 header-1--green">Pakiet 20 Gb LTE</h2>
+                        <h3 class="subheader subheader--purple bold">Promocja</h3>
+                    </div>
+                    <div class="card__content card__content--internet-offer">
+                        <div class="card__text">
+                            Dla tych, którzy nie wyobrażają sobie życia bez Internetu:
+                        </div>
+                        <ul class="card__list">
+                            <li class="card__list-item">oglądaj filmy umieszczone w sieci</li>
+                            <li class="card__list-item">ściągaj duże pliki</li>
+                            <li class="card__list-item">korzystaj z poczty, komunikatora</li>
+                            <li class="card__list-item">sufruj swobodnie</li>
+                        </ul>
+                        <div class="card__promotion">
+                            <!-- <div> -->
+                                <div class="card__promotion-text green">Swoboda <br> i mobilność za</div>
+                                <div class="card__promotion-price purple">
+                                    50<span class="card__promotion-currency">zł</span>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--support">
+                    <div class="card__header">
+                        <h2 class="header-1 header-1">Nasz support</h2>
+                        <h3 class="subheader subheader--green bold">Propozycja naszego TV-maniaka <br> na weekend</h3>
+                    </div>
+                    <div class="expert">
+                        <div class="expert__avatar">
+                            <div class="expert__avatar-holder">
+                                <img src="../../assets/img/expert-avatar.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="expert__advertisment">
+                            <a href="#" class="expert__link">
+                                <div class="expert__advertisement-post">
+                                    <div>zobacz co kuba  znalazł ciekawego w tv na weekend</div> 
+                                    <div class="expert__advertisement-post-icon">
+                                        <img src="../../assets/img/arrow-right.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                            <hr class="expert__wrapper">
+                            <a href="#" class="expert__link">
+                                <div class="expert__advertisement-post">
+                                    <div>podyskutuj z nim o filmach już w piątek 15.09.2014</div>
+                                    <div class="expert__advertisement-post-icon">
+                                        <img src="../../assets/img/dialog-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card__support-promo-text green">
+                        <div>
+                            Zostań naszym ekspertem i poprowadź przedweekendowy chat z użytkownikami
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--application">
+                    <div class="card__header">
+                        <h2 class="header-1 header-1--purple">Aplikacja</h2>
+                    </div>
+                    <div class="card__content card__content--application">
+                        <div class="card__text card__text--grey">
+                            Lorem ipsum dolor sit amet enim. Etiam 
+                            ullamcorper. Suspendisse a pellentesque 
+                            dui, non felis.
+                        </div>
+                    </div>
+                    <div class="card__application-bg">
+                        <img src="../../assets/img/application-bg.svg" alt="application background image">
+                    </div>
+                    <div class="card__application-platforms">
+                        <a href="#" class="card__application-platforms-link">
+                            <img src="../../assets/img/android-icon.svg" alt="android icon">
+                        </a>
+                        <a href="#" class="card__application-platforms-link">
+                            <img src="../../assets/img/apple-icon.svg" alt="apple icon">
+                        </a>
+                        <a href="#" class="card__application-platforms-link">
+                            <img src="../../assets/img/windows-icon.svg" alt="windows icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

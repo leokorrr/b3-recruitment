@@ -1,0 +1,132 @@
+.footer {
+    background-color: $color-gray-dark;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        color: $color-gray;
+        font-size: 14px;
+        margin: 15px 0 10px;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        font-size: 14px;
+        color: $color-gray;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    &__list-item {
+        margin-right: 18px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-col {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    &__right-col {
+        text-align: right;
+    }
+
+    &__additional-info {
+        font-size: 11px;
+        color: $color-gray;
+        margin-bottom: 10px;
+    }
+
+    &__phone {
+        color: $color-green;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    &__app-icon {
+        margin-right: 10px;
+    }
+
+    &__phone-icon {
+        margin-right: 10px;
+    }
+
+    &__mobile-phone-icon {
+        margin-right: 7px;
+    }
+
+    &__small-subheader {
+        color: $color-gray;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    &__mobile-phone {
+        font-size: 20px;
+        font-weight: bold;
+        color: $color-green;
+    }
+
+    &__infoline {
+        text-align: right;
+    }
+
+    &__wrapper-line {
+        border-color: $color-gray;
+    }
+
+    &__download-app {
+        display: flex;
+    }
+
+    &__download-app-text {
+        text-transform: uppercase;
+        line-height: 24px;
+
+        & > div {
+            &:first-of-type {
+                font-size: 14px;
+            }
+
+            &:last-of-type {
+                font-weight: bold;
+                font-size: 32px;
+            }
+        }
+    }
+    
+    &__icon-link {
+        margin-right: 7px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: $color-gray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

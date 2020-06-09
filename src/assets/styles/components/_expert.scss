@@ -1,0 +1,56 @@
+.expert {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    &__advertisement-post {
+        text-transform: uppercase;
+        font-size: 14px;
+        width: 181px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__avatar {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(256, 256, 256, 0.2);
+        border-radius: 85px;
+        margin-right: 15px;
+    }
+
+    &__avatar-holder {
+        width: 100px;
+        height: 100px;
+        border-radius: 60px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: -20px;
+        }
+    }
+
+    &__wrapper {
+        border-color: rgba(256, 256, 256, 0.2);
+        border-bottom: none;
+    }
+
+    &__advertisement-post-icon {
+        margin-left: 15px;
+    }
+
+    &__link {
+        transition: .2s;
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+            color: darken(#ffffff, 20%)
+        }
+    }
+}

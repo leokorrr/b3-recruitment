@@ -1,0 +1,38 @@
+.package-item {
+    &__text {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        max-width: 135px;
+        display: flex;
+        justify-content: center;
+
+        & > div {
+            max-width: 100px;
+            background-color: $color-purple;
+            margin-top: -10px;
+            line-height: 17px;
+        }
+    }
+
+    &__icon-bg {
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+    }
+
+    &__icon {
+        border: 1px solid rgba(256, 256, 256, 0.2);
+        width: 135px;
+        height: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 75px;    
+    }
+}

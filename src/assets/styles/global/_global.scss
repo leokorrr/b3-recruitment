@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;  
+}
+
+.sr-only {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.green {
+    color: $color-green;
+}
+
+.purple {
+    color: $color-purple;
+}
+
+.blue {
+    color: $color-blue;
+}
+
+.bold {
+    font-weight: bold;
+}

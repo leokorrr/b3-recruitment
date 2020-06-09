@@ -1,0 +1,140 @@
+.menu-opened {
+    position: absolute;
+    left: 353px;
+    top: 80px;
+    z-index: 10;
+
+    &__section {
+        padding: 25px 30px;
+        width: 200px;
+    
+        &--bg-white {
+            background-color: #ffffff;
+        }
+    
+        &--bg-dark {
+            background-color: $color-gray-dark;
+        }
+    }
+
+    &__header {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    &__text {
+        font-size: 14px;
+
+        &--light-grey {
+            color: #b2b2b2; 
+        }
+
+        &--grey {
+            color: #656565;
+        }
+    }
+
+    &__promotion-today-action {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 16px;
+            padding: 0 3px;
+        }
+    }
+
+    &__promotion-today-buy {
+        text-transform: uppercase;
+    }
+
+    &__promotion-today-film-type {
+        text-transform: uppercase;
+        color: #828282;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    &__promotion-today-label {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__promotion-today-title {
+        font-size: 16px;
+        color: #5a5a5a;
+        margin-bottom: 2px;
+    }
+
+    &__promotion-today {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 5px 0;
+    }
+
+    &__promotion-today-img {
+        margin-right: 10px;
+    }
+
+    &__promotion-link {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__packages-list {
+        padding: 0;
+        list-style: none;
+    }
+
+    &__packages-list-item {
+        border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+        padding: 5px 0;
+
+        &:first-of-type {
+            border-top: 1px solid rgba(256, 256, 256, 0.1);
+        }
+    }
+
+    &__package-icon {
+
+        &--tv {
+            width: 20px;
+        }
+
+        &--mouse {
+            width: 12px;
+        }
+
+        &--phone {
+            width: 16px;
+        }
+
+        &--mobile-internet {
+            width: 20px;
+        }
+    }
+
+    &__package-icon-box {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    &__package-link {
+        display: flex;
+        align-items: center;
+        color: #9a9a9a;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
