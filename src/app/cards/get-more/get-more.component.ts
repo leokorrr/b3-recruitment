@@ -9,7 +9,7 @@ import { NgxSiemaService } from 'ngx-siema';
 export class GetMoreComponent implements OnInit {
   getMoreSliderOptions: NgxSiemaOptions = {
     selector: '.get-more-carousel',
-    duration: 200,
+    duration: 500,
     easing: 'ease-out',
     perPage: 1,
     startIndex: 0,
@@ -48,7 +48,7 @@ export class GetMoreComponent implements OnInit {
         this.ngxSiemaService.next(1, '.get-more-carousel');
 
         ++counter;
-    }, 1000);
+    }, 10000);
 
     for (let i = 0; i  < carouselBullets.length; i++) {
       carouselBullets[i].addEventListener("click", () => {
