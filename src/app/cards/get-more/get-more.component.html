@@ -3,7 +3,17 @@
 </div>
 <div class="get-more__bg">
     <img src="../../assets/img/get-more-bg-clip.svg" class="get-more__bg-clip" alt="">
-    <img src="../../assets/img/get-more-bg.svg" alt="" class="get-more__bg-img">
+    <ngx-siema class="get-more__slider" [options]="getMoreSliderOptions">
+        <ngx-siema-slide class="get-more__slide">
+            <img src="../../../assets/img/get-more-bg.svg" alt="" class="get-more__bg-img">
+        </ngx-siema-slide>
+        <ngx-siema-slide class="get-more__slide">
+            <img src="../../../assets/img/get-more-bg.svg" alt="" class="get-more__bg-img">
+        </ngx-siema-slide>
+        <ngx-siema-slide class="get-more__slide">
+            <img src="../../../assets/img/get-more-bg.svg" alt="" class="get-more__bg-img">
+        </ngx-siema-slide>
+    </ngx-siema>
 </div>
 <div class="get-more__promotion">
     <div class="get-more__promotion-icons">
@@ -28,4 +38,9 @@
             </div>
         </div>  
     </div>
+</div>
+<div class="get-more__carousel-controllers-box">
+    <span (click)="goTo(0)"class="get-more__carousel-controller get-more__carousel-controller--active"></span>
+    <span (click)="goTo(1)"class="get-more__carousel-controller"></span>
+    <span (click)="goTo(2)"class="get-more__carousel-controller"></span>
 </div>

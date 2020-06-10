@@ -1,5 +1,13 @@
 .get-more {
 
+    &__slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
     &__promotion {
         position: absolute;
         bottom: 0;
@@ -66,10 +74,31 @@
 
     }
 
-    &__bg-img {
+    &__carousel-controllers-box {
         position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
+        display: flex;
+        z-index: 5;
+        bottom: 25px;
+        right: 30px;
+    }
+
+    &__carousel-controller {
+        width: 7px;
+        height: 7px;
+        background-color: rgba(256, 256, 256, 0.5);
+        border-radius: 10px;
+        margin-right: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &--active {
+            background-color: #ffffff;
+        }
     }
 }

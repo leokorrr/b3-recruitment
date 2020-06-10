@@ -20,8 +20,7 @@ export class NowInTvComponent implements OnInit {
 
   constructor(private ngxSiemaService: NgxSiemaService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   prev2() {
     this.ngxSiemaService.prev(1, '.film-slider')
