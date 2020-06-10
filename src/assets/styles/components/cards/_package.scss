@@ -16,6 +16,8 @@
     &__list-item {
         color: #ffffff;
         margin-bottom: 10px;
+        display: flex;
+        align-items: center;
 
         &::before {
             content: "\25A0";
