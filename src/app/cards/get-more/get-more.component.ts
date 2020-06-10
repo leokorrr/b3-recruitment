@@ -21,9 +21,34 @@ export class GetMoreComponent implements OnInit {
   constructor(private ngxSiemaService: NgxSiemaService) { }
 
   ngOnInit(): void {
-    setInterval(() => this.ngxSiemaService.next(1, '.get-more-carousel'), 15000);
-    
     let carouselBullets = document.getElementsByClassName('get-more__carousel-controller')
+    let counter = 1;
+    carouselBullets[0].classList.add("get-more__carousel-controller--active");
+
+    setInterval(() => {
+   
+        if (counter === 0) {
+          carouselBullets[carouselBullets.length - 1].classList.remove("get-more__carousel-controller--active");
+          carouselBullets[counter].classList.add("get-more__carousel-controller--active");
+          
+        }
+  
+        if (counter < carouselBullets.length - 1 && counter !== 0) {
+          carouselBullets[counter - 1].classList.remove("get-more__carousel-controller--active");
+          carouselBullets[counter].classList.add("get-more__carousel-controller--active");
+          
+        }
+  
+        if (counter === carouselBullets.length - 1) {
+          carouselBullets[counter - 1].classList.remove("get-more__carousel-controller--active");
+          carouselBullets[carouselBullets.length - 1].classList.add("get-more__carousel-controller--active");
+          counter = -1; 
+        }
+
+        this.ngxSiemaService.next(1, '.get-more-carousel');
+
+        ++counter;
+    }, 1000);
 
     for (let i = 0; i  < carouselBullets.length; i++) {
       carouselBullets[i].addEventListener("click", () => {
@@ -32,6 +57,7 @@ export class GetMoreComponent implements OnInit {
         }
 
         carouselBullets[i].classList.add("get-more__carousel-controller--active")
+        counter = i;
       })
     }
   }
